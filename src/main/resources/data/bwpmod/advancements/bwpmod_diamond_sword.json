@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_diamond_sword"
+    },
+    "title": "The Diamond Sword!",
+    "description": "You've slaughtered plenty of mobs by this point, almost seems like a chore. Take out some of the \"bosses\" to get the items for your final upgrade!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_tier4_reagent",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_diamond_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

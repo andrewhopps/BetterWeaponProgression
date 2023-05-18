@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "bwpmod:items/bwpmod_witch_drop"
+	}
+}

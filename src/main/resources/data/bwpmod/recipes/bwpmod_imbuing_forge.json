@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "bCb",
+        "BbB"
+    ],
+    "key": {
+        "b": {
+            "item": "minecraft:brick"
+        },
+        "B": {
+            "item": "minecraft:bricks"
+        },
+        "C": {
+            "item": "minecraft:campfire"
+        }
+    },
+    "result": {
+        "item": "bwpmod:bwpmod_imbuing_forge",
+        "count": 1
+    }
+}

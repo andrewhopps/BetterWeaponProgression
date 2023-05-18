@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ##",
+        "RS#",
+        "/R "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "S": {
+            "item": "bwpmod:bwpmod_diamond_sword"
+        },
+        "R": {
+            "item": "minecraft:end_crystal"
+        },
+        "/": {
+            "item": "minecraft:end_rod"
+    	}
+    },
+    "result": {
+        "item": "bwpmod:bwpmod_netherite_sword",
+        "count": 1
+    }
+}

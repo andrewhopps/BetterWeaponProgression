@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    {
+    	"item": "bwpmod:bwpmod_creeper_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_skeleton_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_spider_drop"
+    },
+    {
+    	"item": "minecraft:bowl"
+    }
+    ],
+  
+    "result": {
+        "item": "bwpmod:bwpmod_tier2_reagent",
+        "count": 1
+    }
+}

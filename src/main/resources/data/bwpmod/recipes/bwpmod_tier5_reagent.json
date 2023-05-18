@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    {
+    	"item": "bwpmod:bwpmod_elderguardian_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_enddragon_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_ravager_drop"
+    },
+    {
+    	"item": "minecraft:bowl"
+    }
+    ],
+  
+    "result": {
+        "item": "bwpmod:bwpmod_tier5_reagent",
+        "count": 1
+    }
+}

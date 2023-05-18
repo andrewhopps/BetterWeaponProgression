@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_diamond_sword"
+    },
+    "title": "Better Weapon Progression",
+    "description": "Imbue your sword with the blood of your enemies!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/stone.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_wooden_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

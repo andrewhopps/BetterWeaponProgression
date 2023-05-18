@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_stone_sword"
+    },
+    "title": "The Stone Sword",
+    "description": "They were probably too easy for you anyway, how about we take on some mobs that will certainly get some hits in?",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_tier1_reagent",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_stone_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

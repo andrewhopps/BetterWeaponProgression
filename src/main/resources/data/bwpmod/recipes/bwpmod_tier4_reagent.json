@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    {
+    	"item": "bwpmod:bwpmod_enderman_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_witch_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_phantom_drop"
+    },
+    {
+    	"item": "minecraft:bowl"
+    }
+    ],
+  
+    "result": {
+        "item": "bwpmod:bwpmod_tier4_reagent",
+        "count": 1
+    }
+}

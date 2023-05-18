@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "bwpmod:block/bwpmod_imbuing_forge", "y": 90 },
+		"facing=east": { "model": "bwpmod:block/bwpmod_imbuing_forge", "y": 180 },
+		"facing=south": { "model": "bwpmod:block/bwpmod_imbuing_forge", "y": 270  },
+		"facing=west": { "model": "bwpmod:block/bwpmod_imbuing_forge"}
+	}
+}

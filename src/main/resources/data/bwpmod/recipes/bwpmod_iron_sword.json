@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ##",
+        "RS#",
+        "/R "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_ingot"
+        },
+        "S": {
+            "item": "bwpmod:bwpmod_stone_sword"
+        },
+        "R": {
+            "item": "minecraft:leather"
+        },
+        "/": {
+            "item": "minecraft:bone"
+    	}
+    },
+    "result": {
+        "item": "bwpmod:bwpmod_iron_sword",
+        "count": 1
+    }
+}

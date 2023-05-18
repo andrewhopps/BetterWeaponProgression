@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_golden_sword"
+    },
+    "title": "The Golden Sword",
+    "description": "Gold is a soft metal, so we used it for accents, but there is nothing soft about you. You're likely going to have to try to get all the materials needed for your next upgrade.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_tier3_reagent",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_golden_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

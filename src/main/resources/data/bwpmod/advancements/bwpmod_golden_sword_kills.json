@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_enderman_drop"
+    },
+    "title": "Kill Requirement!",
+    "description": "Get 60 Kills with the Golden Sword.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_golden_sword",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_enderman_drop"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

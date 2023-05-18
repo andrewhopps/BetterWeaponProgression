@@ -1,0 +1,27 @@
+modLoader="javafml" 
+loaderVersion="[40,)"
+license="MIT"
+[[mods]]
+modId="bwpmod"
+version="${file.jarVersion}" 
+displayName="Better Weapon Progression" 
+logoFile="bwpmod.png" 
+credits="Thanks to Mackethen for Artwork" 
+authors="Hopsickle"
+description='''
+Adds new upgradeable swords with higher damage than original vanilla swords.
+'''
+
+[[dependencies.bwpmod]] 
+    modId="forge" 
+    mandatory=true #mandatory
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.bwpmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

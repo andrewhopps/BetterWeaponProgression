@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_netherite_sword"
+    },
+    "title": "The Netherite Sword",
+    "description": "You've pretty much mastered the game, do you feel accomplished? At least you've got a pretty sweet sword to keep those pests away now.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_tier5_reagent",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_netherite_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

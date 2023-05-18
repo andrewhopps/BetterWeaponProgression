@@ -1,0 +1,20 @@
+{
+    "type": "bwpmod:bwp_imbuing_forge",
+	"ingredients": [
+	{
+		"item": "minecraft:stone"
+	},
+	{
+		"item": "minecraft:coal"
+	},
+	{
+		"item": "bwpmod:bwpmod_tier1_reagent"
+	},
+	{
+		"item": "bwpmod:bwpmod_wooden_sword"
+	}
+	],
+	"output": {
+		"item": "bwpmod:bwpmod_stone_sword"
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    {
+    	"item": "bwpmod:bwpmod_cow_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_pig_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_zombie_drop"
+    },
+    {
+    	"item": "minecraft:bowl"
+    }
+    ],
+  
+    "result": {
+        "item": "bwpmod:bwpmod_tier1_reagent",
+        "count": 1
+    }
+}

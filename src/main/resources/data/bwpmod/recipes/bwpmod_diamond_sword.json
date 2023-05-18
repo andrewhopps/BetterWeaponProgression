@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ##",
+        "RS#",
+        "/R "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "S": {
+            "item": "bwpmod:bwpmod_golden_sword"
+        },
+        "R": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "/": {
+            "item": "minecraft:blaze_rod"
+    	}
+    },
+    "result": {
+        "item": "bwpmod:bwpmod_diamond_sword",
+        "count": 1
+    }
+}

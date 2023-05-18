@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    {
+    	"item": "bwpmod:bwpmod_witherskeleton_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_blaze_drop"
+    },
+    {
+    	"item": "bwpmod:bwpmod_piglin_drop"
+    },
+    {
+    	"item": "minecraft:bowl"
+    }
+    ],
+  
+    "result": {
+        "item": "bwpmod:bwpmod_tier3_reagent",
+        "count": 1
+    }
+}

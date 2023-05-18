@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_iron_sword"
+    },
+    "title": "The Iron Sword",
+    "description": "Things seem to be heating up, the Nether only seems natural at this point. Go introduce the mobs there to your new sword.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_tier2_reagent",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_iron_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

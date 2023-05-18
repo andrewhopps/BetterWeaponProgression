@@ -1,0 +1,47 @@
+{
+	"item.bwpmod.bwpmod_wooden_sword": "Wooden Practice Sword",
+	"item.bwpmod.bwpmod_stone_sword": "Some Stone Sword Name",
+	"item.bwpmod.bwpmod_iron_sword": "Some Iron Sword Name",
+	"item.bwpmod.bwpmod_golden_sword": "Some Gold Sword Name",
+	"item.bwpmod.bwpmod_diamond_sword": "Some Diamond Sword Name",
+	"item.bwpmod.bwpmod_netherite_sword": "Some Netherite Sword Name",
+	"item.bwpmod.bwpmod_blaze_drop": "Rare Blaze Drop",
+	"item.bwpmod.bwpmod_cow_drop": "Cow Tongue",
+	"item.bwpmod.bwpmod_creeper_drop": "Rare Creeper Drop",
+	"item.bwpmod.bwpmod_elderguardian_drop": "Rare Elder Guardian Drop",
+	"item.bwpmod.bwpmod_enddragon_drop": "Rare End Dragon Drop",
+	"item.bwpmod.bwpmod_enderman_drop": "Rare Enderman Drop",
+	"item.bwpmod.bwpmod_phantom_drop": "Rare Phantom Drop",
+	"item.bwpmod.bwpmod_pig_drop": "Pig Snout",
+	"item.bwpmod.bwpmod_piglin_drop": "Rare Piglin Drop",
+	"item.bwpmod.bwpmod_ravager_drop": "Rare Ravager Drop",
+	"item.bwpmod.bwpmod_skeleton_drop": "Rare Skeleton Drop",
+	"item.bwpmod.bwpmod_spider_drop": "Rare Spider Drop",
+	"item.bwpmod.bwpmod_witch_drop": "Rare Witch Drop",
+	"item.bwpmod.bwpmod_witherskeleton_drop": "Rare Wither Skeleton Drop",
+	"item.bwpmod.bwpmod_zombie_drop": "Zombie Teeth",
+	
+	"itemGroup.bwpmod": "Better Weapon Progression",	
+	
+	"block.bwpmod.bwpmod_imbuing_forge": "Imbuing Forge",
+	
+	"item.bwpmod.bwpmod_tier1_reagent": "Tier 1 Imbuing Agent",
+	"item.bwpmod.bwpmod_tier2_reagent": "Tier 2 Imbuing Agent",
+	"item.bwpmod.bwpmod_tier3_reagent": "Tier 3 Imbuing Agent",
+	"item.bwpmod.bwpmod_tier4_reagent": "Tier 4 Imbuing Agent",
+	"item.bwpmod.bwpmod_tier5_reagent": "Tier 5 Imbuing Agent",
+	
+	"tooltip.item.bwpmod.bwpmod_wooden_sword.tooltip.shift": "",
+	"tooltip.item.bwpmod.bwpmod_wooden_sword.tooltip": "Practically a sharpened stick.",
+	"tooltip.item.bwpmod.bwpmod_stone_sword.tooltip.shift": "",
+	"tooltip.item.bwpmod.bwpmod_stone_sword.tooltip": "A very primative and uneven edge.",
+	"tooltip.item.bwpmod.bwpmod_iron_sword.tooltip.shift": "",
+	"tooltip.item.bwpmod.bwpmod_iron_sword.tooltip": "A basic forged sword with a clean edge.",
+	"tooltip.item.bwpmod.bwpmod_golden_sword.tooltip.shift": "",
+	"tooltip.item.bwpmod.bwpmod_golden_sword.tooltip": "A gilded iron sword, mostly decorative, but you're quick to show it off.",
+	"tooltip.item.bwpmod.bwpmod_diamond_sword.tooltip.shift": "",
+	"tooltip.item.bwpmod.bwpmod_diamond_sword.tooltip": "A gilded iron sword with some bedazzled with diamonds.",
+	"tooltip.item.bwpmod.bwpmod_netherite_sword.tooltip.shift": "",
+	"tooltip.item.bwpmod.bwpmod_netherite_sword.tooltip": "A netherite damascus, seems otherworldly, but looks pretty sweet."
+	
+}

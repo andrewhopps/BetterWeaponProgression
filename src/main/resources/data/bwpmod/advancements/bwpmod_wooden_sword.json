@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_wooden_sword"
+    },
+    "title": "Your first sword!",
+    "description": "Let's see how you handle dealing with some wildlife and zombies.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_wooden_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

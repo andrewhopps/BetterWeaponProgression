@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " #I",
+        "RS#",
+        "/R "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_nugget"
+        },
+        "S": {
+            "item": "bwpmod:bwpmod_iron_sword"
+        },
+        "R": {
+            "item": "minecraft:rabbit_hide"
+        },
+        "I": {
+            "item": "minecraft:gold_ingot"
+        },
+        "/": {
+            "item": "minecraft:lightning_rod"
+    	}
+    },
+    "result": {
+        "item": "bwpmod:bwpmod_golden_sword",
+        "count": 1
+    }
+}

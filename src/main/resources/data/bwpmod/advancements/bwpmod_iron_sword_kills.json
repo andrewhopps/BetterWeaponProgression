@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "bwpmod:bwpmod_blaze_drop"
+    },
+    "title": "Kill Requirement!",
+    "description": "Get 45 Kills with the Iron Sword",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "bwpmod:bwpmod_iron_sword",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bwpmod:bwpmod_blaze_drop"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
