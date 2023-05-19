@@ -1,19 +1,6 @@
 package io.github.hopsickle.betterweaponprogression.common.block.entity.BWPBlockEntities;
 
-import java.util.Optional;
-import java.util.Random;
-
-import javax.annotation.Nonnull;
-
-import org.jetbrains.annotations.NotNull;
-
 import io.github.hopsickle.betterweaponprogression.common.block.entity.BWPModBlockEntities;
-import io.github.hopsickle.betterweaponprogression.common.item.BWPDiamondSword;
-import io.github.hopsickle.betterweaponprogression.common.item.BWPGoldenSword;
-import io.github.hopsickle.betterweaponprogression.common.item.BWPIronSword;
-import io.github.hopsickle.betterweaponprogression.common.item.BWPNetheriteSword;
-import io.github.hopsickle.betterweaponprogression.common.item.BWPStoneSword;
-import io.github.hopsickle.betterweaponprogression.common.item.BWPWoodenSword;
 import io.github.hopsickle.betterweaponprogression.common.recipe.BWPImbuingForgeRecipe;
 import io.github.hopsickle.betterweaponprogression.common.screen.BWPImbuingForgeMenu;
 import io.github.hopsickle.betterweaponprogression.init.BWPModItemInit;
@@ -21,7 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -30,21 +17,20 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import org.jetbrains.annotations.NotNull;
+
+import javax.annotation.Nonnull;
+import java.util.Optional;
 
 public class BWPImbuingForgeBlockEntity extends BlockEntity implements MenuProvider{
 	private final ItemStackHandler itemHandler = new ItemStackHandler(5) {
@@ -87,7 +73,7 @@ public class BWPImbuingForgeBlockEntity extends BlockEntity implements MenuProvi
 	@Override
 	public Component getDisplayName() {
 		// TODO Auto-generated method stub
-		return new TextComponent("Imbuing Forge");
+		return Component.literal("Imbuing Forge");
 	}
 	
 	@Nonnull
@@ -100,7 +86,7 @@ public class BWPImbuingForgeBlockEntity extends BlockEntity implements MenuProvi
 	@Nonnull
 	@Override
 	public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @javax.annotation.Nullable Direction side){
-		if(cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+		if(cap == ForgeCapabilities.ITEM_HANDLER) {
 			return lazyItemHandler.cast();
 		}
 		
@@ -193,7 +179,7 @@ public class BWPImbuingForgeBlockEntity extends BlockEntity implements MenuProvi
         if(match.isPresent()) {
             entity.itemHandler.extractItem(0,1, false);
             entity.itemHandler.extractItem(1,1, false);
-            entity.itemHandler.getStackInSlot(2).hurt(1, new Random(), null);
+			entity.itemHandler.getStackInSlot(2).hurt(1, RandomSource.create(), null);
 
             entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(),
                     entity.itemHandler.getStackInSlot(3).getCount() + 1));
@@ -215,15 +201,15 @@ public class BWPImbuingForgeBlockEntity extends BlockEntity implements MenuProvi
     }
 
 	
-/* 
- * 					Crafting Slot Layout 
+/*
+ * 					Crafting Slot Layout
  * 				---------------------------
 	 				Slot: 0 	SwordSlot
 	 				Slot: 1 	ReagentSlot
 	 				Slot: 2 	MaterialSlot
 	 				Slot: 3 	FuelSlot
 	 				Slot: 4		ResultSlot
-	 
+
 
 	    private static void craftItem(BWPImbuingForgeBlockEntity entity) {
 	    	System.out.println("Trying to Craft");
@@ -269,7 +255,7 @@ public class BWPImbuingForgeBlockEntity extends BlockEntity implements MenuProvi
 	    }
 	    
 */
-	    	
+
 
 
 	
