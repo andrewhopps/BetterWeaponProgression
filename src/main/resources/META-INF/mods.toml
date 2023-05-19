@@ -9,7 +9,7 @@ logoFile="bwpmod.png"
 credits="Thanks to Mackethen for Artwork" 
 authors="Hopsickle"
 description='''
-Adds new upgradeable swords with higher damage than original vanilla swords.
+Adds new upgradeable swords that end up with higher damage than their vanilla counterparts.
 '''
 
 [[dependencies.bwpmod]] 
