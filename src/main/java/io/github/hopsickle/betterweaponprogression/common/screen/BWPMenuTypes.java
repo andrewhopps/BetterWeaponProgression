@@ -8,11 +8,12 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 
 public class BWPMenuTypes {
 	public static final DeferredRegister<MenuType<?>> MENUS =
-			DeferredRegister.create(ForgeRegistries.CONTAINERS, BWPMod.MOD_ID);
+			DeferredRegister.create(ForgeRegistries.MENU_TYPES, BWPMod.MOD_ID);
 	
 	public static final RegistryObject<MenuType<BWPImbuingForgeMenu>> BWP_IMBUING_FORGE_MENU =
             registerMenuType(BWPImbuingForgeMenu::new, "bwpmod_imbuing_forge_menu");
