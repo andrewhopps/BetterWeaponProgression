@@ -1,6 +1,6 @@
 modLoader="javafml" 
 loaderVersion="[40,)"
-license="MIT"
+license="MIT License"
 [[mods]]
 modId="bwpmod"
 version="${file.jarVersion}" 
