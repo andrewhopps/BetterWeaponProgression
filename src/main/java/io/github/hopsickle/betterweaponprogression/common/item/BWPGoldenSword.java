@@ -1,17 +1,24 @@
 package io.github.hopsickle.betterweaponprogression.common.item;
 
+import java.util.List;
+
+import org.jetbrains.annotations.Nullable;
+
 import io.github.hopsickle.betterweaponprogression.BWPMod;
 import io.github.hopsickle.betterweaponprogression.init.BWPModItemInit;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.*;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 public class BWPGoldenSword extends BWPSwordItem{
 	
@@ -27,9 +34,9 @@ public class BWPGoldenSword extends BWPSwordItem{
 	@Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(Component.translatable("tooltip.item.bwpmod.bwpmod_golden_sword.tooltip.shift"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.item.bwpmod.bwpmod_golden_sword.tooltip.shift"));
         } else {
-            pTooltipComponents.add(Component.translatable("tooltip.item.bwpmod.bwpmod_golden_sword.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.item.bwpmod.bwpmod_golden_sword.tooltip"));
         }
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }

@@ -1,7 +1,10 @@
 package io.github.hopsickle.betterweaponprogression.common.recipe;
 
+import org.jetbrains.annotations.Nullable;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+
 import io.github.hopsickle.betterweaponprogression.BWPMod;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.FriendlyByteBuf;
@@ -9,7 +12,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 
 public class BWPImbuingForgeRecipe implements Recipe<SimpleContainer>{
@@ -29,10 +36,6 @@ public class BWPImbuingForgeRecipe implements Recipe<SimpleContainer>{
 	@Override
 	public boolean matches(SimpleContainer pContainer, Level pLevel) {
 		// TODO Auto-generated method stub
-        if(pLevel.isClientSide()){
-            return false;
-        }
-
 		return recipeItems.get(0).test(pContainer.getItem(0));
 	}
 
@@ -118,6 +121,21 @@ public class BWPImbuingForgeRecipe implements Recipe<SimpleContainer>{
             buf.writeItemStack(recipe.getResultItem(), false);
         }
 
+        @Override
+        public RecipeSerializer<?> setRegistryName(ResourceLocation name) {
+            return INSTANCE;
+        }
+
+        @Nullable
+        @Override
+        public ResourceLocation getRegistryName() {
+            return ID;
+        }
+
+        @Override
+        public Class<RecipeSerializer<?>> getRegistryType() {
+            return Serializer.castClass(RecipeSerializer.class);
+        }
 
         @SuppressWarnings("unchecked") // Need this wrapper, because generics
         private static <G> Class<G> castClass(Class<?> cls) {
