@@ -1,13 +1,15 @@
 modLoader="javafml" 
 loaderVersion="[41,)"
 license="MIT"
+
 [[mods]]
 modId="bwpmod"
-version="${file.jarVersion}" 
+version="1.19.2-0.0.2"
 displayName="Better Weapon Progression" 
-logoFile="bwpmod.png" 
-credits="Thanks to Mackethen for Artwork" 
+logoFile="bwpmod.jpg"
 authors="Hopsickle"
+credits="Thanks to Mackethen for Artwork"
+displayURL="https://github.com/andrewhopps/BetterWeaponProgression/issues"
 description='''
 Adds new upgradeable swords that end up with higher damage than their vanilla counterparts.
 '''
