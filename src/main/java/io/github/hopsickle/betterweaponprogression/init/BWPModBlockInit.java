@@ -1,20 +1,10 @@
 package io.github.hopsickle.betterweaponprogression.init;
 
-import java.util.List;
-
-import org.jetbrains.annotations.Nullable;
-
 import com.google.common.base.Supplier;
-
 import io.github.hopsickle.betterweaponprogression.BWPMod;
 import io.github.hopsickle.betterweaponprogression.common.block.BWPImbuingForgeBlock;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -23,6 +13,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class BWPModBlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BWPMod.MOD_ID);
@@ -51,7 +44,7 @@ public class BWPModBlockInit {
 				new Item.Properties().tab(tab)){
 			@Override
 			public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-				pTooltip.add(new TranslatableComponent(tooltipKey));
+				pTooltip.add(Component.literal(tooltipKey));
 			}
 		});
 	}

@@ -1,23 +1,16 @@
 package io.github.hopsickle.betterweaponprogression.common.screen;
 
-import org.jetbrains.annotations.Nullable;
-
 import io.github.hopsickle.betterweaponprogression.common.block.entity.BWPBlockEntities.BWPImbuingForgeBlockEntity;
 import io.github.hopsickle.betterweaponprogression.common.screen.slot.BWPResultSlot;
 import io.github.hopsickle.betterweaponprogression.init.BWPModBlockInit;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.MenuType;
-import net.minecraft.world.inventory.SimpleContainerData;
-import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
 public class BWPImbuingForgeMenu extends AbstractContainerMenu{
@@ -38,7 +31,7 @@ public class BWPImbuingForgeMenu extends AbstractContainerMenu{
 		addPlayerInventory(inv);
 		addPlayerHotbar(inv);
 		
-		this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
+		this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
 			this.addSlot(new SlotItemHandler(handler, 0, 82, 30));
 			this.addSlot(new SlotItemHandler(handler, 1, 108, 22));
 			this.addSlot(new SlotItemHandler(handler, 2, 56, 22));

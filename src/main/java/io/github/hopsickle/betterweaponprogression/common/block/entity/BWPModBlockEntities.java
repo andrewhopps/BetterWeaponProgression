@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class BWPModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-			DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, BWPMod.MOD_ID);
+			DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, BWPMod.MOD_ID);
 	
 	public static final RegistryObject<BlockEntityType<BWPImbuingForgeBlockEntity>> BWPIMBUINGFORGEBLOCKENTITY =
 			BLOCK_ENTITIES.register("bwp_imbuing_forge_block_entity", () ->
