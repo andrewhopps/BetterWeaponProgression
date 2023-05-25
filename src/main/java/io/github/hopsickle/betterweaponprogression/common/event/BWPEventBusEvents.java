@@ -1,9 +1,11 @@
 package io.github.hopsickle.betterweaponprogression.common.event;
 
 import io.github.hopsickle.betterweaponprogression.BWPMod;
+import io.github.hopsickle.betterweaponprogression.common.client.KillCounterOverlay;
 import io.github.hopsickle.betterweaponprogression.common.recipe.BWPImbuingForgeRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,6 +24,11 @@ public class BWPEventBusEvents {
 					BWPImbuingForgeRecipe.Type.INSTANCE);
 		});
 
+	}
+
+	@SubscribeEvent
+	public static void registerGuiOverlays(RegisterGuiOverlaysEvent event) {
+		event.registerAboveAll("kills", KillCounterOverlay.HUD_KILLS);
 	}
 	
 }
